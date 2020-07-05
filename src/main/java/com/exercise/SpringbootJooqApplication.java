@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringbootJooqApplication {
 
     public static void main(String[] args) {
+        System.getProperties().setProperty("org.jooq.no-logo", "true");
         SpringApplication.run(SpringbootJooqApplication.class, args);
     }
 

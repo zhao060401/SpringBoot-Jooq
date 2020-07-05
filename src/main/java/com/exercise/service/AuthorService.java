@@ -4,4 +4,6 @@ import com.exercise.generator.tables.pojos.Author;
 
 public interface AuthorService {
     public Author selectById(Integer id);
+
+    public Author fetchById(Integer id);
 }

@@ -22,4 +22,9 @@ public class AuthorController {
         Author author = authorService.selectById(id);
         return author;
     }
+    @GetMapping("/test1/{id}")
+    public Author userDao(@PathVariable Integer id){
+        Author author = authorService.fetchById(id);
+        return  author;
+    }
 }
